@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f1f1f;
+}
+
+div {
+    background-color: rgb(25, 25, 25);
+    padding: 1vh;
+}
+
+div button {
+    color: rgb(0, 176, 0);
+    background-color: transparent;
+    border: solid 0.1vh;
+    position: relative;
+    bottom: 0.5vh;
+}
+
+div label {
+    display: flex;
+    justify-content: flex-end;
+    margin-top:-4vh;
+    color: rgb(0, 176, 0);
+}
+
+div + label {
+    color: rgb(0, 176, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50vh;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 85vh;
+}
+
+input {
+    background-color: transparent;
+    border: solid 0;
+    border-bottom: solid 0.1vh;
+    border-bottom-color: rgb(0, 176, 0);
+    color: rgb(0, 176, 0);
+    width: 80%;
+    outline: none;
+    font-size: 2.5vh;
+}
+
+
+
