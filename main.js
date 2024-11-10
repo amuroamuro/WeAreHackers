@@ -10,9 +10,12 @@ const prompt = document.querySelector("input");
 //환경 설정
 let finding = false;
 let server = false;
+let buying = false;
+let down = false;
 //기타 변수
 let commend = "";
 let Cash = 0;
+let buyCommend = "";
 //function정의
 function error() {
     alert("젠장, 에러!");
@@ -23,7 +26,15 @@ function helpAlert() {
     alert("server, conect, addHack, crash, password, hack, down(25캐쉬), pass(100캐쉬), cash, get");
 }
 function buy() {
-    alert("아직 구현 안 함.");
+    //alert("아직 구현 안 함.");
+    if(buying==true) {
+        if(buyCommend=="down") {
+            cash -= 25;
+            down = true;
+        }else{
+            error();
+        }
+    }
 }
 function autoAlert() {
     alert("아직 구현 안 함.");
