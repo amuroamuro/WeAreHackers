@@ -33,6 +33,5 @@ function autoAlert() {
 help.addEventListener("click", helpAlert);
 store.addEventListener("click", buy);
 auto.addEventListener("click", autoAlert);
-prompt.addEventListener("")
 
 
