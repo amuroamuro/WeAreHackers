@@ -20,7 +20,7 @@ function error() {
 function helpAlert() {
     alert("help.(궁금한 명령어 이름)으로 해당 명령어의 정보를 알수 있습니다.");
     alert("명령어 : (다음 창)");
-    alert("server, conect, addHack, crash, password, hack, down(25캐쉬), pass(100캐쉬), cash, get");
+    alert("server, conect, addHack, crash, password, hack, down(25캐쉬), pass(100캐쉬), cash, get, start, end, script");
 }
 function buy() {
     alert("아직 구현 안 함.");
