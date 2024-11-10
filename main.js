@@ -26,7 +26,8 @@ function buy() {
     alert("아직 구현 안 함.");
 }
 function autoAlert() {
-    alert("아직 구현 안 함.");
+    //alert("아직 구현 안 함.");
+    alert("start명령어로 자동화 스크립트 연다. 그리고 한 명령어씩 스크립트를 짠다. end명령어로 스크립트를 닫는다. 마지막으로 script명령어로 실행한다.");
 }
 function run(e){
     var code = e.code;
