@@ -6,14 +6,13 @@ const cash = document.querySelector("div label");
 // 아웃풋 불러오기
 const output = document.querySelector("div+label");
 //프롬프트
-const prompt = document.querySelector("input");
+const prompty = document.querySelector("input");
 //환경 설정
 let finding = false;
 let server = false;
 let buying = false;
 let down = false;
 //기타 변수
-let commend = "";
 let Cash = 0;
 let buyCommend = "";
 //function정의
@@ -23,7 +22,7 @@ function error() {
 function helpAlert() {
     alert("help.(궁금한 명령어 이름)으로 해당 명령어의 정보를 알수 있습니다.");
     alert("명령어 : (다음 창)");
-    alert("server, conect, addHack, crash, password, hack, down(25캐쉬), pass(100캐쉬), cash, get");
+    alert("server, conect, addHack, crash, password, hack, down(25캐쉬), pass(100캐쉬), cash, get, start, end, script");
 }
 function buy() {
     //alert("아직 구현 안 함.");
@@ -37,12 +36,18 @@ function buy() {
     }
 }
 function autoAlert() {
-    alert("아직 구현 안 함.");
+    //alert("아직 구현 안 함.");
+    alert("start명령어로 자동화 스크립트 연다. 그리고 한 명령어씩 스크립트를 짠다. end명령어로 스크립트를 닫는다. 마지막으로 script명령어로 실행한다.");
 }
 function run(e){
     var code = e.code;
     if(code=="Enter") {
-        alert("아직 구현 안함.");
+        //alert("아직 구현 안함.");
+        //변수 선언
+        var commend = prompty.value;
+        if(!commend=="") {
+            alert("아직 구현안 함.");
+        }
     }
 }
 
@@ -50,6 +55,6 @@ function run(e){
 help.addEventListener("click", helpAlert);
 store.addEventListener("click", buy);
 auto.addEventListener("click", autoAlert);
-prompt.addEventListener("keydown", run);
+prompty.addEventListener("keydown", run);
 
 
