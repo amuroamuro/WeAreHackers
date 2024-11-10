@@ -12,6 +12,7 @@ let finding = false;
 let server = false;
 let buying = false;
 let down = false;
+let pass = false;
 //기타 변수
 let Cash = 0;
 let buyCommend = "";
