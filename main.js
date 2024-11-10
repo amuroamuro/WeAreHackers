@@ -53,12 +53,18 @@ function run(e){
         //변수 선언
         var commendFrame = prompty.value;
         var commend = 토큰화(commendFrame, comma);
+        var comlen = commend.length();
         if(!commend=="") {
             //alert("아직 구현안 함.");
             if(server) {
                 alert("아직 구현 안 함.");
             }else {
-                Output(commend);
+                //Output(commend);
+                if(commend[0]=="server") {
+                    if(comlen==1) {
+                        //
+                    }
+                }
             }
         }
     }
