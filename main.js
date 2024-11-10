@@ -13,7 +13,19 @@ let server = false;
 //기타 변수
 let commend = "";
 let Cash = 0;
+//function정의
+function error() {
+    alert("젠장, 에러!");
+}
+function helpAlert() {
+    alert("help.(궁금한 명령어 이름)으로 해당 명령어의 정보를 알수 있습니다.");
+    alert("명령어 : (다음 창)");
+    alert("server, conect, addHack, crash, password, hack, down(25캐쉬), pass(100캐쉬), cash, get");
+}
 
-
+//이벤트리스너
+help.addEventListener("click", helpAlert);
+store.addEventListener("click", buy);
+auto.addEventListener("click", autoAlert);
 
 
