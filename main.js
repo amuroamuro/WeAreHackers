@@ -23,15 +23,22 @@ function helpAlert() {
     alert("server, conect, addHack, crash, password, hack, down(25캐쉬), pass(100캐쉬), cash, get");
 }
 function buy() {
-    alert("아직 구현 안 함.")
+    alert("아직 구현 안 함.");
 }
 function autoAlert() {
-    alert("아직 구현 안 함.")
+    alert("아직 구현 안 함.");
+}
+function run(e){
+    var code = e.code;
+    if(code=="Enter") {
+        alert("아직 구현 안함.");
+    }
 }
 
 //이벤트리스너
 help.addEventListener("click", helpAlert);
 store.addEventListener("click", buy);
 auto.addEventListener("click", autoAlert);
+prompt.addEventListener("keydown", run);
 
 
