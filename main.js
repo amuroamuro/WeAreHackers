@@ -16,9 +16,14 @@ let down = false;
 let Cash = 0;
 let buyCommend = "";
 //function정의
+    //시스템 function
 function error() {
     alert("젠장, 에러!");
 }
+function Output(text) {
+    output.innerText = text;
+}
+    //이벤트리스너 function
 function helpAlert() {
     alert("help.(궁금한 명령어 이름)으로 해당 명령어의 정보를 알수 있습니다.");
     alert("명령어 : (다음 창)");
@@ -37,7 +42,7 @@ function buy() {
 }
 function autoAlert() {
     //alert("아직 구현 안 함.");
-    alert("start명령어로 자동화 스크립트 연다. 그리고 한 명령어씩 스크립트를 짠다. end명령어로 스크립트를 닫는다. 마지막으로 script명령어로 실행한다.");
+    Output("start명령어로 자동화 스크립트 연다. 그리고 한 명령어씩 스크립트를 짠다. end명령어로 스크립트를 닫는다. 마지막으로 script명령어로 실행한다.");
 }
 function run(e){
     var code = e.code;
@@ -50,7 +55,6 @@ function run(e){
         }
     }
 }
-
 //이벤트리스너
 help.addEventListener("click", helpAlert);
 store.addEventListener("click", buy);
