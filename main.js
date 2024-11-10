@@ -22,6 +22,12 @@ function helpAlert() {
     alert("명령어 : (다음 창)");
     alert("server, conect, addHack, crash, password, hack, down(25캐쉬), pass(100캐쉬), cash, get");
 }
+function buy() {
+    alert("아직 구현 안 함.")
+}
+function autoAlert() {
+    alert("아직 구현 안 함.")
+}
 
 //이벤트리스너
 help.addEventListener("click", helpAlert);
