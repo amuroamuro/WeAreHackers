@@ -6,12 +6,12 @@ const cash = document.querySelector("div label");
 // 아웃풋 불러오기
 const output = document.querySelector("div+label");
 //프롬프트
-const prompt = document.querySelector("input");
+const prompty = document.querySelector("input");
 //환경 설정
 let finding = false;
 let server = false;
+let down = false;
 //기타 변수
-let commend = "";
 let Cash = 0;
 //function정의
 function error() {
@@ -31,7 +31,12 @@ function autoAlert() {
 function run(e){
     var code = e.code;
     if(code=="Enter") {
-        alert("아직 구현 안함.");
+        //alert("아직 구현 안함.");
+        //변수 선언
+        var commend = prompty.value;
+        if(!commend=="") {
+            alert("아직 구현안 함.");
+        }
     }
 }
 
@@ -39,6 +44,6 @@ function run(e){
 help.addEventListener("click", helpAlert);
 store.addEventListener("click", buy);
 auto.addEventListener("click", autoAlert);
-prompt.addEventListener("keydown", run);
+prompty.addEventListener("keydown", run);
 
 
