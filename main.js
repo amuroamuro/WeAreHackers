@@ -1,3 +1,7 @@
+//import
+import {토큰화} from "./library/token.js";
+import * as ip from "./library/ip.js";
+import {randomN} from "./library/random.js";
 // 시스템바 불러오기
 const help = document.querySelector("#help");
 const store = document.querySelector("#store");
@@ -55,15 +59,20 @@ function run(e){
         var commendFrame = prompty.value;
         var commend = 토큰화(commendFrame, comma);
         var comlen = commend.length();
-        if(!commend=="") {
+        alert(commend);
+        if(!comlen==0) {
             //alert("아직 구현안 함.");
             if(server) {
                 alert("아직 구현 안 함.");
             }else {
                 //Output(commend);
                 if(commend[0]=="server") {
+                    alert(toString(comlen));
                     if(comlen==1) {
-                        //
+                        alert("ㅇㅇ");
+                        var ipN = randomN(1, ip.ipLen);
+                        var ip = ip[ipN];
+                        Output(ip);
                     }
                 }
             }
