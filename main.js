@@ -60,8 +60,8 @@ function run(e){
         var commend = 토큰화(commendFrame, comma);
         alert(commend);
         var comlen = commend.length;
-        alert(toString(comlen));
-        if(!comlen=="") {
+        alert(comlen);
+        if(!comlen==0) {
             //alert("아직 구현안 함.");
             if(server) {
                 alert("아직 구현 안 함.");
