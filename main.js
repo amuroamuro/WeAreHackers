@@ -58,6 +58,7 @@ function run(e){
         //변수 선언
         var commendFrame = prompty.value;
         var commend = 토큰화(commendFrame, comma);
+        alert(commend);
         var comlen = commend.length();
         if(!comlen=="") {
             //alert("아직 구현안 함.");
