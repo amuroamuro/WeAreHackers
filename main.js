@@ -58,9 +58,7 @@ function run(e){
         //변수 선언
         var commendFrame = prompty.value;
         var commend = 토큰화(commendFrame, comma);
-        alert(commend);
         var comlen = commend.length;
-        alert(comlen);
         if(!comlen==0) {
             //alert("아직 구현안 함.");
             if(server) {
@@ -70,9 +68,9 @@ function run(e){
                 if(commend[0]=="server") {
                     // alert(toString(comlen));
                     if(comlen==1) {
-                        // var ipN = randomN(1, ip.ipLen);
-                        // var ip = ip.ip[ipN];
-                        // Output(ip);
+                        var ipN = randomN(1, ip.ipLen);
+                        var Ip = ip.ip[ipN];
+                        Output(Ip);
                     }
                 }
             }
