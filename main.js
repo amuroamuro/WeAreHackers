@@ -59,20 +59,18 @@ function run(e){
         var commendFrame = prompty.value;
         var commend = 토큰화(commendFrame, comma);
         var comlen = commend.length();
-        alert(commend);
-        if(!comlen==0) {
+        if(!comlen=="") {
             //alert("아직 구현안 함.");
             if(server) {
                 alert("아직 구현 안 함.");
             }else {
                 //Output(commend);
                 if(commend[0]=="server") {
-                    alert(toString(comlen));
+                    // alert(toString(comlen));
                     if(comlen==1) {
-                        alert("ㅇㅇ");
-                        var ipN = randomN(1, ip.ipLen);
-                        var ip = ip[ipN];
-                        Output(ip);
+                        // var ipN = randomN(1, ip.ipLen);
+                        // var ip = ip.ip[ipN];
+                        // Output(ip);
                     }
                 }
             }

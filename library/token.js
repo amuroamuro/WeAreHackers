@@ -1,4 +1,4 @@
-function 토큰화(문장, 구분기호) {
+export function 토큰화(문장, 구분기호) {
     var i = 0;
     var toI = 문장.length;
     var token = "";
@@ -20,7 +20,7 @@ function 토큰화(문장, 구분기호) {
     return tokens;
 }
 
-function 간략화(문장, 구분기호) {
+export function 간략화(문장, 구분기호) {
     var i = 0;
     var toI = 문장.length;
     var token = "";

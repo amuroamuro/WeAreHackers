@@ -1,4 +1,4 @@
-const ip = [
+export const ip = [
     "1.120.192.0",
     "2.143.2.9",
     "3.293.9.7",
@@ -10,4 +10,4 @@ const ip = [
     "367.1.5.993"
 ];
 
-const ipLen = ip.length;
+export const ipLen = ip.length;
