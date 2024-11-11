@@ -16,6 +16,7 @@ const comma = ".()"
 //환경 설정
 let finding = false;
 let server = false;
+let conecting = false;
 let buying = false;
 let down = false;
 let pass = false;
@@ -65,13 +66,18 @@ function run(e){
                 alert("아직 구현 안 함.");
             }else {
                 //Output(commend);
-                if(commend[0]=="server") {
-                    // alert(toString(comlen));
-                    if(comlen==1) {
+                if(conecting) {
+                    alert("아직 구현 안 함.");
+                }else {
+                    if(commend[0]=="server") {
+                        // alert(toString(comlen));
+                        if(comlen==1) {
 
-                        var ipN = randomN(1, ip.ipLen-1);
-                        var Ip = ip.ip[ipN];
-                        Output(Ip);
+                            var ipN = randomN(1, ip.ipLen-1);
+                            var Ip = ip.ip[ipN];
+                            Output(Ip);
+                            conecting = true;
+                        }
                     }
                 }
             }
