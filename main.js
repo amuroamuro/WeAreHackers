@@ -59,7 +59,8 @@ function run(e){
         var commendFrame = prompty.value;
         var commend = 토큰화(commendFrame, comma);
         alert(commend);
-        var comlen = commend.length();
+        var comlen = commend.length;
+        alert(toString(comlen));
         if(!comlen=="") {
             //alert("아직 구현안 함.");
             if(server) {
