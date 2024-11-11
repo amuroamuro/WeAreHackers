@@ -72,7 +72,6 @@ function run(e){
                     if(commend[0]=="server") {
                         // alert(toString(comlen));
                         if(comlen==1) {
-
                             var ipN = randomN(1, ip.ipLen-1);
                             var Ip = ip.ip[ipN];
                             Output(Ip);
