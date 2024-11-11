@@ -7,6 +7,8 @@ const cash = document.querySelector("div label");
 const output = document.querySelector("div+label");
 //프롬프트
 const prompty = document.querySelector("input");
+//토큰화 시스템 구분기호
+const comma = ".()"
 //환경 설정
 let finding = false;
 let server = false;
@@ -50,9 +52,21 @@ function run(e){
     if(code=="Enter") {
         //alert("아직 구현 안함.");
         //변수 선언
-        var commend = prompty.value;
+        var commendFrame = prompty.value;
+        var commend = 토큰화(commendFrame, comma);
+        var comlen = commend.length();
         if(!commend=="") {
-            alert("아직 구현안 함.");
+            //alert("아직 구현안 함.");
+            if(server) {
+                alert("아직 구현 안 함.");
+            }else {
+                //Output(commend);
+                if(commend[0]=="server") {
+                    if(comlen==1) {
+                        //
+                    }
+                }
+            }
         }
     }
 }
