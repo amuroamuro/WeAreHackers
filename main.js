@@ -43,6 +43,8 @@ function buy() {
         if(buyCommend=="down") {
             cash -= 25;
             down = true;
+        }else if(buyCommend=="pass") {
+            
         }else{
             error();
         }
